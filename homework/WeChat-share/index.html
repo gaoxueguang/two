@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="bg"></div>
+    <div class="content">
+        <img src="img/logo.png" alt="" class="content-img">
+        <span  class="content-number1">恭喜你获得现金红包</span>
+        <div class="content-font">
+            <span>100</span>
+            <p>元</p>
+        </div>
+        <div class="content-line"></div>
+        <span class="content-number2">输入手机号</span>
+        <div class="content-input">
+            <input type="text"  placeholder="输入手机号领现金红包">
+        </div>
+        <span class="content-iphone"></span>
+        <a href="javasprit:(0);"><img src="img/button.png" alt="" class="button"></a>
+    </div>
+    <script type="text/javascript">
+        $('input').on('change',function(){
+            $.ajax({
+                type:"get",
+                url:"http://tcc.taobao.com/cc/json/mobile_tel_segment.htm",
+                async:true,
+                dataType:'jsonp',
+                data:	{tel:$('input').val(), output:'json'},
+                success:function(data){
+                    console.log(data);
+                    if(data.province==''){
+                        $('.content-iphone').html('手机号有误')
+                    }else{
+                        $('.content-iphone').html('正确');
+                        $('a').attr('href','shareLayer2.html')
+                    }
+                }
+            });
+        })
+
+    </script>
+</div>
+</body>
+</html>
