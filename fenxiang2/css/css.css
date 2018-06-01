@@ -1,0 +1,70 @@
+.body{position: relative;}
+.gos{width:100%;
+     height:100%;
+     background: url(../images/微信分享-弹框2.png);
+     background-size:100% 100%;
+     position: relative;
+     }
+.ps{width:40%;
+    height:30%;
+    background: url(../images/微信分享-弹框2_603.png);
+    background-size:100% 100%;
+    position: absolute;
+    top:55%;
+    left:30%;}
+.kd{width:60%;
+    height:7%;
+    background: url(../images/微信分享-弹框2_034.png);
+    background-size:100% 100%;
+    position: absolute;
+    top:87%;
+    left:21%;}
+.vos{width:100%;
+     height:100%;
+     position: absolute;
+     top:0;
+     left:0;
+      opacity: 0.4;
+      background: #000;
+      display: none;}
+.soc{width:84%;
+     height:60%;
+     background: rgb(255,255,255);
+     z-index: 1000;
+     border-radius: 10px;
+     position: absolute;
+     top:22.5%;
+     left: 8%;
+     opacity: 1 !important;
+     display: none;}
+.tie{width:116%;
+     height:42%;
+     position: absolute;
+     background: url(../images/congratulations_02.png);
+     background-size: 100% 100%;
+     top:-26%;
+     left:-8%;}
+.hua{width:6%;
+	 height:3%;
+	 background: url(../images/微信分享-弹框2_083.png);
+	 position: absolute;
+	 top:3%;
+	 left:91%;}
+.lis{width:50%;
+    height:8%;
+    line-height: 8%;
+    margin:26% auto 5%;
+    font-size: 168%;
+    font-weight: normal;}
+.yax{width:34%;
+     height:35%;
+     background: url(../images/微信分享-弹框2_03.png);
+     background-size:100% 100%;
+     margin:4% auto 4%;}
+ .kuz{width:54%;
+      height:13%;
+      margin:8% auto;
+      background: url(../images/微信分享-弹框2_012_03.png);
+      background-size: 100% 100%}
+
+
