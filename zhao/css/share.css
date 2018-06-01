@@ -1,0 +1,55 @@
+div.box {
+    width: 8rem;
+    height: 12rem;
+    position: relative;
+}
+
+div.up-bg {
+    width: 8rem;
+    height: 11rem;
+    background: url(../images/1.png) no-repeat;
+    background-size: 100%;
+}
+
+div.down-bg {
+    width: 8rem;
+    height: 5rem;
+    background: url(../images/2.png) no-repeat;
+    background-size: 100%;
+    margin-top: -1.8rem;
+}
+
+.jiangbei {
+    padding-top: 0.23rem;
+    width: 7.5rem;
+}
+
+.jiangbei img {
+    width: 7.5rem;
+}
+
+.hongbao {
+    width: 2.81rem;
+    height: 3.67rem;
+    background-image: linear-gradient(0deg, #e11423 0%, #e42629 100%);
+    border-radius: 0.2rem;
+    margin-left: 2.41rem;
+    margin-top: 0.64rem;
+}
+
+.hongbao img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 4rem;
+    height: 1.88rem;
+    margin-left: 1.57rem;
+    margin-top: 0.49rem;
+}
+
+.btn img {
+    width: 4.9rem;
+    height: 1.88rem;
+}
