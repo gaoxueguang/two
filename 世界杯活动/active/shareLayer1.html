@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/shareLayer1.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="bg"></div>
+    <div class="content">
+        <img src="images/logo.png" alt="" class="content-img">
+        <span  class="content-number1">恭喜你获得现金红包</span>
+        <div class="content-font">
+            <span>100</span>
+            <p>元</p>
+        </div>
+        <div class="content-line"></div>
+        <span class="content-number2">输入手机号</span>
+        <div class="content-input">
+            <input type="text"  placeholder="输入手机号领现金红包" id="phone">
+        </div>
+        <span class="content-iphone">手机号有误</span>
+        <img src="images/button.png" alt="" class="button" id="btn">
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+            var phone=$("#phone");
+            phone.on('blur',function () {
+                var pv=phone.value;
+                console.log(pv);
+                var reg=/^(13|14|15|18)[0-9]{9}$/;
+                if(reg.test(pv)){
+                    console.log("成功");
+                }else{
+                    console.log("失败");
+                }
+            })
+
+
+
+    </script>
+</body>
+</html>
